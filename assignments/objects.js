@@ -94,21 +94,49 @@ console.log(antonietta.multiplyNums(3,4))
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+const parent = {
+  name: 'Susan',
+  age: 70,
+  speak() {
+    return `Hello, I'm the parent ${this.name}`
+  },
+  child: {
+    name: 'George',
+    age: 50,
+    speak() {
+      return `Hello, I'm the child ${this.name}`
+    },
+    grandchild: {
+      name: 'Sam',
+      age: 30,
+      speak() {
+        return `Hello, I'm the grandchild ${this.name}`
+      }
+    }
+  }
+}
+
+// Destructured Objects for ease of readability
+const { child, child: { grandchild } } = parent
 
 // Log the parent object's name
-
+console.log(parent.name)
 // Log the child's age
-
+console.log(child.name)
 // Log the name and age of the grandchild
-
+console.log(grandchild.name)
 // Have the parent speak
-
+console.log(parent.speak())
 // Have the child speak
-
+console.log(child.speak())
 // Have the grandchild speak
+console.log(grandchild.speak()) // thanx ASI <3
 
+// Exports
 module.exports = {
   kennan,
-  antonietta
+  antonietta,
+  parent,
+  child,
+  grandchild
 }
