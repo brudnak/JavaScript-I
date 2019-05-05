@@ -20,7 +20,7 @@ describe('objects.js', () => {
     })
 })
 
-describe('object.js', () => {
+describe('objects.js', () => {
     describe('parent object method speak', () => {
         it('can create a string literal greeting', () => {
             const expectedOutput = `Hello, I'm the parent ${parent.name}`
@@ -30,7 +30,7 @@ describe('object.js', () => {
     })
 })
 
-describe('object.js', () => {
+describe('objects.js', () => {
     describe('nested inside of the parent object', () => {
         describe('child object method speak', () => {
             it('can create a string literal greeting', () => {
@@ -42,7 +42,7 @@ describe('object.js', () => {
     })
 })
 
-describe('objest.js', () => {
+describe('objects.js', () => {
     describe('nested inside of the parent object', () => {
         describe('nested inside of the child object', () => {
             it('can create a string literal greeting', () => {
