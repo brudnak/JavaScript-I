@@ -18,7 +18,7 @@ describe('function-conversion.js', () => {
 
 describe('function-conversion.js', () => {
     describe('anotherFunction returns input', () => {
-        it('returns the parameter is was pased', () => {
+        it('returns the parameter it was pased', () => {
             expect(anotherFunction(19)).toBe(19)
             expect(anotherFunction('Russell')).toBe('Russell')
         })
