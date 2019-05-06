@@ -81,8 +81,7 @@ console.log(searchID(42))
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 // let lastCar = 0;
 let lastCar = inventory[inventory.length - 1]
-const { car_make, car_model } = lastCar
-console.log(`The last vehicle in inventory is a ${car_make} ${car_model}`);
+console.log(`The last vehicle in inventory is a ${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
