@@ -1,4 +1,4 @@
-# Student: Andrew Brudnak 💾
+# Student: Andrew Brudnak 🃏 🃏 🃏 🃏 🃏
 
 # JavaScript - I
 
