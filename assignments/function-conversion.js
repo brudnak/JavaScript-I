@@ -41,14 +41,24 @@ console.log(subtract(1, 2))
 // });
 // console.log(triple);
 
-exampleArray = [1,2,3,4]
-const triple = exampleArray.map((num => num * 3))
-console.log(triple)
+exampleArray = [1, 2, 3, 4]
+
+extraArray = [5, 10, 15, 20]
+
+everythingIs = [19, 42]
+
+const triple = (arr) => arr.map((num => num * 3)) 
+
+console.log(triple(exampleArray))
+console.log(triple(extraArray))
+console.log(triple(everythingIs))
+
 
 // Exports
 module.exports = {
     myFunction,
     anotherFunction,
     add,
-    subtract
+    subtract,
+    triple
   }

@@ -3,6 +3,7 @@ const { myFunction,
         add,
         subtract,
         triple
+
 } = require('./function-conversion')
 
 describe('function-conversion.js', () => {
@@ -38,6 +39,17 @@ describe('function-conversion.js', () => {
         it('subtracts a number', () => {
             expect(subtract(20, 10)).toBe(10)
             expect(subtract(-5, 3)).toBe(-8)
+        })
+    })
+})
+
+describe('function-conversion.js', () => {
+    describe('triple function', () => {
+        it('maps through an array and multiples by three', () => {
+            const testArray = [10, 20, 30]
+            const expectedOutput = [30, 60, 90]
+            const actualOutput = triple(testArray)
+            expect(actualOutput).toEqual(expectedOutput)
         })
     })
 })

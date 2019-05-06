@@ -31,7 +31,7 @@ const kennan = {
   name: 'Kennan',
   email: 'kdiben1@tinypic.com',
   gender: 'M',
-  speak: function() {
+  speak() {
     return `Hello, my name is ${this.name}!`
   }
 }
