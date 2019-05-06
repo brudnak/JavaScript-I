@@ -120,9 +120,16 @@ for (let i = 0; i < inventory.length; i++) {
             BMWAndAudi.push(inventory[i])
      }
 }
+
 console.log(JSON.stringify(BMWAndAudi))
 
+console.log('********** BELOW USED FOR LOOP TO SORT BWM AND AUDIO VEHICLES **********')
 console.table(BMWAndAudi)
+
+const audiAndBMW = inventory.filter(x => x.car_make.toLocaleLowerCase() ==='audi' || x.car_make.toLocaleLowerCase() === 'bmw')
+
+console.log('********** BELOW USED FILTER TO SORT BWM AND AUDIO VEHICLES **********')
+console.table(audiAndBMW)
 
 // Exports
 module.exports = {
