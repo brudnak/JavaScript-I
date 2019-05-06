@@ -67,7 +67,7 @@ console.log(`Car 33 is a *car year goes here* *car make goes here* *car model go
 
 const searchID = (id) => {
     for (let i = 0; i < inventory.length; i++) {
-        if(inventory[i].id === id) {
+        if (inventory[i].id === id) {
             let x = inventory[i]
             return `Car ${x.id} is a ${x.car_year} ${x.car_make} ${x.car_model}`
         }
@@ -114,11 +114,13 @@ console.log(`There are ${oldCars.length} cars on the lot that are older than the
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = []
 for (let i = 0; i < inventory.length; i++) {
-    let { car_make } = inventory[i]
-    if (car_make.toLocaleLowerCase() === 'audi' || 
-        car_make.toLocaleLowerCase() === 'bmw') { 
-            BMWAndAudi.push(inventory[i])
-     }
+    let {
+        car_make
+    } = inventory[i]
+    if (car_make.toLocaleLowerCase() === 'audi' ||
+        car_make.toLocaleLowerCase() === 'bmw') {
+        BMWAndAudi.push(inventory[i])
+    }
 }
 
 console.log(JSON.stringify(BMWAndAudi))
@@ -126,7 +128,7 @@ console.log(JSON.stringify(BMWAndAudi))
 console.log('********** BELOW USED FOR LOOP TO SORT BWM AND AUDIO VEHICLES **********')
 console.table(BMWAndAudi)
 
-const audiAndBMW = inventory.filter(x => x.car_make.toLocaleLowerCase() ==='audi' || x.car_make.toLocaleLowerCase() === 'bmw')
+const audiAndBMW = inventory.filter(x => x.car_make.toLocaleLowerCase() === 'audi' || x.car_make.toLocaleLowerCase() === 'bmw')
 
 console.log('********** BELOW USED FILTER TO SORT BWM AND AUDIO VEHICLES **********')
 console.table(audiAndBMW)
@@ -134,5 +136,4 @@ console.table(audiAndBMW)
 // Exports
 module.exports = {
     searchID
-  }
- 
+}
